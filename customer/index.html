@@ -29,15 +29,15 @@
     />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="asset/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="asset/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./asset/css/font-awesome.min.css" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="asset/css/owl.carousel.css" />
-    <link rel="stylesheet" href="asset/css/web.css" />
-    <link rel="stylesheet" href="asset/css/responsive.css" />
+    <link rel="stylesheet" href="./asset/css/owl.carousel.css" />
+    <link rel="stylesheet" href="./asset/css/web.css" />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
 
     <!-- Style -->
     <link rel="stylesheet" href="./asset/css/style.css" />
@@ -131,13 +131,81 @@
           </div>
 
           <div class="col-sm-6">
-            <div class="shopping-item">
-              <a href="cart.html"
-                >Cart - <span class="cart-amunt">$100</span>
-                <i class="fa fa-shopping-cart"></i>
-                <span class="product-count">5</span></a
-              >
-            </div>
+            <nav id="main-nav">
+              <a class="cart-button" href="#">
+                <span class="bag-count">3</span>
+                <span class="bag-icon">Bag</span>
+                <span class="bag-label">View Bag</span>
+              </a>
+            </nav>
+            <aside id="sidebar-cart">
+              <main>
+                <a href="#" class="close-button"
+                  ><span class="close-icon">X</span></a
+                >
+                <h2>Shopping Bag <span class="count">3</span></h2>
+                <ul class="products" id="productsCart">
+                  <!-- <li class="product">
+                    <a href="#" class="product-link">
+                      <span class="product-image">
+                        <img
+                          src="https://via.placeholder.com/75x50/ffffff/cccccc?text=PHOTO"
+                          alt="Product Photo"
+                        />
+                      </span>
+                      <span class="product-details">
+                        <h3>Very Cool Product One</h3>
+                        <span class="qty-price">
+                          <span class="qty">
+                            <button class="minus-button" id="minus-button-1">
+                              -
+                            </button>
+                            <input
+                              type="number"
+                              id="qty-input-1"
+                              class="qty-input"
+                              step="1"
+                              min="1"
+                              max="1000"
+                              name="qty-input"
+                              value="1"
+                              pattern="[0-9]*"
+                              title="Quantity"
+                              inputmode="numeric"
+                            />
+                            <button class="plus-button" id="plus-button-1">
+                              +
+                            </button>
+                            <input
+                              type="hidden"
+                              name="item-price"
+                              id="item-price-1"
+                              value="12.00"
+                            />
+                          </span>
+                          <span class="price">$16.00</span>
+                        </span>
+                      </span>
+                    </a>
+                    <a href="#remove" class="remove-button"
+                      ><span class="remove-icon">X</span></a
+                    >
+                  </li> -->
+                </ul>
+                <div class="totals">
+                  <div class="subtotal">
+                    <!-- <span class="label">Subtotal:</span> -->
+                    <span>Subtotal:</span>
+                    <span class="amount">$54.00</span>
+                  </div>
+                </div>
+                <div class="action-buttons">
+                  <a class="view-cart-button" href="#">Cart</a
+                  ><a class="checkout-button" href="#">Checkout</a>
+                </div>
+              </main>
+            </aside>
+            <div id="sidebar-cart-curtain"></div>
           </div>
         </div>
       </div>
@@ -271,43 +339,46 @@
 
     <div class="product">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
+        <select name="" id="dropdownProduct" class="form-control">
+          <option value="">Loại sản phẩm</option>
+          <option value="iphone">Iphone</option>
+          <option value="samsung">SamSung</option>
+        </select>
+        <div class="row" id="product-list">
+          <!-- <div class="col-md-3">
             <div class="product__card">
-              <div class="card__img">ádsa</div>
-              <div class="card__content"></div>
+              <div class="card__img">
+                <img
+                  src="https://cdn.tgdd.vn/Products/Images/42/114115/iphone-x-64gb-hh-600x600.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <h3 id="p-name">SamSung</h3>
+                <p id="p-price">2.000.000 vnđ</p>
+                <button type="button" class="btn btn-success">
+                  Add to card
+                </button>
+              </div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="product__card">
-              <div class="card__img">ádsd</div>
-              <div class="card__content"></div>
+              <div class="card__img">
+                <img
+                  src="https://cdn.tgdd.vn/Products/Images/42/217536/samsung-galaxy-m51-trang-new-600x600-600x600.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card__content">
+                <h3 id="p-name">SamSung</h3>
+                <p id="p-price">2.000.000 vnđ</p>
+                <button type="button" class="btn btn-success">
+                  Add to card
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product__card">
-              <div class="card__img">ádsd</div>
-              <div class="card__content"></div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product__card">
-              <div class="card__img">ádsd</div>
-              <div class="card__content"></div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product__card">
-              <div class="card__img">ádsd</div>
-              <div class="card__content"></div>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product__card">
-              <div class="card__img">ádsd</div>
-              <div class="card__content"></div>
-            </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -416,17 +487,37 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <!-- jQuery sticky menu -->
-    <!-- <script src="asset/js/owl.carousel.min.js"></script> -->
-    <!-- <script src="asset/js/jquery.sticky.js"></script> -->
+    <script src="./asset/js/owl.carousel.min.js"></script>
+    <script src="./asset/js/jquery.sticky.js"></script>
 
     <!-- jQuery easing -->
-    <script src="asset/js/jquery.easing.1.3.min.js"></script>
-
-    <!-- Main Script -->
-    <script src="asset/js/main.js"></script>
+    <script src="./asset/js/jquery.easing.1.3.min.js"></script>
+    <!-- jquery -->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- Script -->
+    <script src="./asset/js/script.js"></script>
 
     <!-- Slider -->
-    <script type="text/javascript" src="asset/js/bxslider.min.js"></script>
-    <script type="text/javascript" src="asset/js/script.slider.js"></script>
+    <script type="text/javascript" src="./asset/js/bxslider.min.js"></script>
+    <script type="text/javascript" src="./asset/js/script.slider.js"></script>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+      integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- util -->
+    <script src="./asset/util/util.js"></script>
+    <!-- model -->
+    <script src="./model/product.js"></script>
+    <!-- controller -->
+    <script src="./controller/controller.js"></script>
+    <!-- services -->
+    <script src="./services/productServ.js"></script>
+    <!-- Shopping cart -->
+    <script src="./asset/js/shoppingCart.js"></script>
+    <!-- Main Js -->
+    <script src="./asset/js/main.js"></script>
   </body>
 </html>

@@ -1,5 +1,23 @@
 .product{
+    #dropdownProduct{
+        width: 200px;
+    }
     .product__card{
-        
+        width: 100%;
+        margin: 20px 0;
+        text-align: center;
+        border: 1px solid rgb(226, 223, 223);
+        border-radius: 10px;
+        padding: 10px;
+        .card__img{
+            width: 100%;
+            padding: 10px;
+        }
+        .card__content{
+            padding: 10px 0;
+            h3{
+                font-weight: bold;
+            }
+        }
     }
 }
