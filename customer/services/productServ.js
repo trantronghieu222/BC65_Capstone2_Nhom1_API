@@ -9,4 +9,10 @@ var productServ = {
         },
       });
     },
+    getProductByID: function (id) {
+      return axios({
+        url: `${BASE_URL}/${id}`,
+        method: "GET",
+      });
+    },
 };  
