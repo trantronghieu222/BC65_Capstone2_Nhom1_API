@@ -3,5 +3,5 @@ function saveLocalStorage(dsnv){
     // Chuyển về dạng Json
     var DsnvJson = JSON.stringify(dsnv);
     // lưu vào Local Storage
-    localStorage.setItem("ProductList_Local", DsnvJson);
+    localStorage.setItem("CartList_Local", DsnvJson);
 }
