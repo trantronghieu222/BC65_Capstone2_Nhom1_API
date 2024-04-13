@@ -1,8 +1,3 @@
-// function cart (products , quantity){
-//     this.products = products;
-//     this.quantity = quantity;
-// }
-
 function cart (name, price, screen, backCamera, frontCamera, img, desc, type, id, quantity){
     this.name = name;
     this.price = price;
