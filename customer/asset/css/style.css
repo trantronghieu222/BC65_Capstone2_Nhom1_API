@@ -482,4 +482,8 @@ body.show-sidebar-cart #sidebar-cart {
 }
 .product .product__card .card__content h3 {
   font-weight: bold;
+}
+.product .product__card .card__content input[type=number].qty-input::-webkit-inner-spin-button,
+.product .product__card .card__content input[type=number].qty-input::-webkit-outer-spin-button {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
