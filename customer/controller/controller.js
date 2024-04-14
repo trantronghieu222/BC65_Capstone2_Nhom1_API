@@ -14,11 +14,9 @@ function renderProductList(productsList) {
                 <h3 id="p-name">${product.name}</h3>
                 <p id="p-price">$${product.price}</p>
                 <span class="qty">
-                  <button class="minus-button">
-                    -
-                  </button>
+                  <label for="qty-input">Quantity:</label>
                   <input
-                    style="width: 40px"
+                    style="margin-bottom: 10px"
                     type="number"
                     id="qty-input-${product.id}"
                     class="qty-input"
@@ -31,9 +29,6 @@ function renderProductList(productsList) {
                     title="Quantity"
                     inputmode="numeric"
                   />
-                  <button class="plus-button">
-                    +
-                  </button>
                 </span>
                 <button type="button" class="btn btn-success" onclick="addToCart(${product.id})">Add to card</button>
               </div>
